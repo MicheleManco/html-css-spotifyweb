@@ -71,3 +71,32 @@ main {
     padding: 10px 25px;
     margin: auto 20px;
 }
+
+#player {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+
+#song {
+    display: flex;
+    width: 260px;
+    height: 55%;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+#song img { 
+    max-height: 100%;
+    margin-left: 15px;
+}
+
+#like-folder {
+    margin-left: 20px;
+}
+
+.fa-folder {
+    margin-left: 15px;
+}
+
