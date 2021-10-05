@@ -72,6 +72,7 @@ main {
     margin: auto 20px;
 }
 
+/* player  */
 #player {
     display:flex;
     justify-content: space-between;
@@ -81,11 +82,15 @@ main {
 
 #song {
     display: flex;
-    width: 260px;
+    width: 240px;
     height: 55%;
     justify-content: space-between;
     align-items: center;
 } 
+
+#song div span {
+    font-size: 12px;
+}
 
 #song img { 
     max-height: 100%;
@@ -100,3 +105,42 @@ main {
     margin-left: 15px;
 }
 
+#play-pause{
+    width: 35%;
+}
+
+#pulsanti {
+    width: 260px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+#scorrimento {
+    width: 100%;
+    margin-top: 13px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra {
+    width: 80%;
+    height: 3px;
+    margin: 0px 10px;
+    background-color: lightslategray;
+}
+
+#volume {
+    width: 230px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#barra-volume {
+    width: 50%;
+    height: 3px;
+    background-color: lightslategray;
+}
