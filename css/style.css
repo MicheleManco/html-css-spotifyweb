@@ -23,7 +23,6 @@ a:hover {
 
 h2 {
     color: white;
-    margin: 20px 15px 0px;
 }
 
 #player {
@@ -32,18 +31,24 @@ h2 {
 }
 
 #struttura{
-    height: calc(100vh - 100px);
     background-color:rgb(32, 41, 54) ;
 }
 
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
 
 /* aside  */
 aside {
     color: rgb(136, 136, 136);
     width: 240px;
-    height: 100%;
     background-color: black;
     float: left;
+    position: fixed;
+    bottom: 100px;
+    top: 0;
 }
 
 #sei-qui-sx {
@@ -65,8 +70,7 @@ aside {
 
 .container-center div>#logo {
     width: 75%;
-    height: 100px;
-    padding-bottom: 20px;
+    height: 80px;
 } 
 
 .container-center ul {
@@ -93,7 +97,7 @@ aside {
     position: relative;
 }
 
-.container-center ul li{
+.container-center ul li {
     margin-top: 10px;
 }
 
@@ -107,13 +111,14 @@ aside {
     bottom: 15px;
     left: 0;
 }
- #profilo hr{
+
+ #profilo hr {
      color: lightslategray;
      width: 190px;
 
 }
 
-#profilo div{
+#profilo div {
     margin: 8px 0;
 }
 
@@ -123,7 +128,15 @@ main {
     float: left;
     width: calc(100% - 240px);
     color: rgb(136, 136, 136);;
-    margin-top: 120px;
+    margin: 120px 0 100px 240px;
+}
+
+.intestazione {
+    margin: 20px 20px 0px;
+}
+
+#main-overflow {
+    overflow: auto;
 }
 
 #sei-qui {
@@ -164,6 +177,11 @@ nav ul {
     margin: auto 20px;
 }
 
+#call-to-action div:hover {
+    scale: 1.08;
+    cursor: pointer;
+}
+
 .row {
     display: flex;
 }
@@ -185,6 +203,10 @@ nav ul {
     color: white;
 }
 
+.artisti img {
+    border-radius: 50%;
+}
+
 
 /* player  */
 #player {
@@ -192,6 +214,10 @@ nav ul {
     justify-content: space-between;
     align-items: center;
     color:white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 #song {
@@ -229,6 +255,16 @@ nav ul {
     display: flex;
     justify-content: space-between;
     font-size: 25px;
+    align-items: center;
+}
+
+.fa-play-circle {
+    font-size: 35px;
+}
+
+.fa-play-circle:hover {
+    cursor: pointer;
+    scale: 1.1;
 }
 
 #scorrimento {
