@@ -229,7 +229,7 @@ nav ul {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 4px;
 }
 
 .overlay-radius {
@@ -327,10 +327,54 @@ nav ul {
 
 .barra {
     width: 80%;
-    height: 3px;
+    height: 5px;
     margin: 0px 10px;
     background-color: lightslategray;
+    border-radius: 5px;
 }
+
+.barra-hover {
+     display: none;  
+    width: 25%;
+    height: 5px;
+    background-color: chartreuse;
+    position: relative;
+    border-radius: 5px;
+}
+
+.cursore-hover {
+     display: none; 
+    background-color: white;
+    border-radius: 50%;
+    height: 13px;
+    width: 13px;
+    position: absolute;
+    right: 0;
+    top:-4px;
+}
+
+.barra:hover {
+    cursor: pointer;
+}
+
+#barra-volume:hover {
+    cursor: pointer;
+}
+.barra:hover .cursore-hover {
+    display: block;
+} 
+
+ .barra:hover .barra-hover {
+    display: block;
+}
+
+#barra-volume:hover .barra-hover {
+    display: block;
+}
+
+#barra-volume:hover .cursore-hover {
+    display: block;
+} 
 
 #volume {
     width: 230px;
@@ -341,8 +385,9 @@ nav ul {
 
 #barra-volume {
     width: 50%;
-    height: 3px;
+    height: 5px;
     background-color: lightslategray;
+    border-radius: 5px;
 }
  @media all and ( max-width: 1120px) {
      .row {
