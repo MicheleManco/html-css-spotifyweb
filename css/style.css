@@ -51,6 +51,10 @@ aside {
     top: 0;
 }
 
+#logo-small {
+    display: none;
+}
+
 #sei-qui-sx {
     border-left: 3px solid rgb(164, 252, 106);
     margin-left: -23px;
@@ -68,26 +72,26 @@ aside {
     margin-right: 8px;
 }
 
-.container-center div>#logo {
+.container-center-aside div>#logo {
     width: 75%;
     height: 80px;
 } 
 
-.container-center ul {
+.container-center-aside ul {
     height: 30%;
     overflow: auto;
 }
 
-.container-center div img {
+.container-center-aside div img {
     width: 15%;
 }
 
-.container-center h4 {
+.container-center-aside h4 {
     margin: 20px 0 3px;
     color: white;
 }
 
-.container-center {
+.container-center-aside {
     width: 80%;
     height: 100%;
     margin: 15px auto 0px;
@@ -97,7 +101,7 @@ aside {
     position: relative;
 }
 
-.container-center ul li {
+.container-center-aside ul li {
     margin-top: 10px;
 }
 
@@ -112,6 +116,12 @@ aside {
     left: 0;
 }
 
+#sfondo-profilo {
+    background-color: rgb(136, 136, 136) ;
+    border-radius: 50%;
+    padding: 1%;
+}
+
  #profilo hr {
      color: lightslategray;
      width: 190px;
@@ -122,17 +132,20 @@ aside {
     margin: 8px 0;
 }
 
+#profilo div span {
+    margin-left: 5px;
+}
+
 
 /* main  */
 main {
     float: left;
-    width: calc(100% - 240px);
-    color: rgb(136, 136, 136);;
+    color: rgb(136, 136, 136);
     margin: 120px 0 100px 240px;
 }
 
 .intestazione {
-    margin: 20px 20px 0px;
+    margin: 20px 0 0 20px;
 }
 
 #main-overflow {
@@ -149,6 +162,7 @@ main {
 }
 
 nav ul {
+    /* width: 720px; */
     width: 720px;
     margin: 0 auto;
     font-size: 15px;
@@ -191,7 +205,7 @@ nav ul {
     flex-direction: column;
     align-items: center;
     width: 15%;
-    margin: 30px 0px 30px 20px;
+    margin: 30px 15px 30px 15px;
 }
 
 .cover img {
@@ -228,7 +242,7 @@ nav ul {
     align-items: center;
 } 
 
-#song div span {
+#song div div {
     font-size: 12px;
 }
 
@@ -293,4 +307,139 @@ nav ul {
     width: 50%;
     height: 3px;
     background-color: lightslategray;
+}
+ @media all and ( max-width: 1120px) {
+     .row {
+         flex-wrap: wrap;
+         /* justify-content: space-around; */
+     }
+
+     nav ul {
+        width: 100%;
+         flex-wrap: wrap;
+     }
+
+     nav ul li {
+        margin: 5px 20px 5px;
+     }
+
+     .cover {
+         width: 20%;
+     }
+ }
+
+ @media all and ( max-width: 960px) {
+    #song {
+        width: 25%;
+    } 
+
+    #song div div {
+        margin-left: 5px;
+    }
+
+    #like-folder {
+        margin: 0px 0px 0px 2px;
+    }
+
+    .fa-folder {
+        margin: 0;
+    }
+
+    #song img {
+        width: 40px;
+    }
+ 
+    #pulsanti {
+        width: 100%;
+    }
+
+    #play-pause {
+        width: 35%;
+        margin-left: 10px;
+    }
+
+    #volume {
+        width: 25%;
+    }
+
+    #volume div {
+        font-size: 10px;
+    }
+
+    .cover {
+        width: 35%;
+    }
+
+}
+
+@media all and ( max-width: 560px){
+    main {
+        margin: 120px 0 100px 50px;
+    }
+
+    #call-to-action {
+        left: 50px;
+    }
+
+    #call-to-action div {
+        font-size: 0.7em;
+    }
+
+    aside {
+        width: 50px;
+    }
+
+    #profilo {
+        width: 100%;
+    }
+
+    #profilo hr {
+        display: none;
+    }
+
+    #profilo div span {
+        display: none;
+    }
+
+    #profilo div h4 {
+        display: none;
+    }
+
+    #profilo div  i{
+        font-size: 20px;
+        margin: 8px 9px;
+    }
+
+    #sfondo-profilo {
+        width: 80%;
+        margin: 0 auto;
+    } 
+
+    #playlist {
+        display: none;
+    }
+
+    .container-center-aside div:nth-child(7) {
+        display: none;
+    }
+
+    .container-center-aside ul {
+        display: none;
+    }
+
+    .container-center-aside .centratore-icone a {
+        display: none;
+    }    
+
+    #logo {
+        display: none;
+    }
+
+    #logo-small {
+        display: inline-block;
+    }
+
+    .container-center-aside div img{
+        width: 100%;
+    }
 }
