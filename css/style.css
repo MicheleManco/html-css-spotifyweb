@@ -142,6 +142,11 @@ aside {
     margin-left: 5px;
 }
 
+#profilo div:first-child:hover {
+    cursor: pointer;
+    color: white;
+}
+
 
 /* main  */
 main {
@@ -215,6 +220,10 @@ nav ul {
     margin: 30px 15px 30px 15px;
 }
 
+.cover:hover {
+    cursor: pointer;
+}
+
 .cover:hover .overlay{
     display: inline-block;
 }
@@ -274,6 +283,7 @@ nav ul {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 999;
 }
 
 #song {
@@ -286,6 +296,16 @@ nav ul {
 
 #song div div {
     font-size: 12px;
+}
+
+#song div div:last-child {
+    color:lightslategray;
+}
+
+#song div div:last-child:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
 }
 
 #song img { 
