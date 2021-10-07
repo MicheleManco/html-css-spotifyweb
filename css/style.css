@@ -32,6 +32,7 @@ h2 {
 
 #struttura{
     background-color:rgb(32, 41, 54) ;
+    z-index: -10;
 }
 
 .clearfix {
@@ -208,13 +209,48 @@ nav ul {
     margin: 30px 15px 30px 15px;
 }
 
+.cover:hover .overlay{
+    display: inline-block;
+}
+
+.cover:hover .play-hover {
+    display: inline-block;
+}
+
+
+.filtro-black {
+    position: relative;
+}
+
+.overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.699);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.overlay-radius {
+    border-radius: 50%;
+}
+
+.play-hover {
+    display: none;
+    position: absolute;
+    top: 37%;
+    left: 41%;
+} 
+
 .cover img {
     max-width: 100%;
-    margin-bottom: 15px;
+    z-index: ;
 }
 
 .cover h4 {
     color: white;
+    margin-top: 15px;
 }
 
 .artisti img {
