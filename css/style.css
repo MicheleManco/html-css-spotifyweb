@@ -79,7 +79,7 @@ aside {
 } 
 
 .container-center-aside ul {
-    height: 30%;
+    height: 20%;
     overflow: auto;
 }
 
@@ -181,6 +181,7 @@ nav ul {
     height: 100px;
     display: flex;
     justify-content: flex-end;
+    z-index: 10;
 }
 
 #call-to-action div {
@@ -522,5 +523,11 @@ nav ul {
 
     .container-center-aside div img{
         width: 100%;
+    }
+}
+
+@media all and (max-height: 574px) {
+    #profilo {
+        display: none;
     }
 }
